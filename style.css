@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap');
+:root {
+  /* primary */
+  --Cyan: hsl(179, 62%, 43%);
+  --Bright-Yellow: hsl(71, 73%, 54%);
+
+  /* Natural */
+  --Light-Gray: hsl(204, 43%, 93%);
+  --Grayish-Blue: hsl(218, 22%, 67%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: 'Karla', sans-serif;
+}
+body {
+  font-family: 'Karla', sans-serif;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--Light-Gray);
+}
+
+main {
+  width: 80rem;
+  box-shadow: 0 8px 10px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  overflow: hidden;
+  margin: 3rem;
+}
+
+.fluid-card {
+  padding: 5rem;
+  background-color: #fff;
+}
+/* .fluid-card .content {
+  width: 50%;
+} */
+
+.fluid-card .content h2 {
+  font-size: 3rem;
+  font-weight: 700;
+  margin: 0 0 2rem 0;
+  color: var(--Cyan);
+}
+
+.fluid-card .content h3 {
+  font-weight: 700;
+  font-size: 2rem;
+  margin: 2rem 0;
+  color: var(--Bright-Yellow);
+}
+
+.fluid-card .content p {
+  font-size: 1.5rem;
+  line-height: 1.8;
+  color: var(--Grayish-Blue);
+}
+
+.duble-card {
+  display: flex;
+}
+
+.duble-card_first {
+  flex: 1 1 20rem;
+  padding: 5rem;
+  background-color: var(--Cyan);
+}
+
+.duble-card_first h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+  color: var(--Light-Gray);
+}
+
+.duble-card_first .content > p:nth-child(2) {
+  font-size: 1.3rem;
+  color: rgb(206, 206, 206);
+}
+
+.duble-card_first span {
+  font-size: 3rem;
+  color: var(--Light-Gray);
+}
+
+.duble-card_first .content > p:nth-child(3) {
+  color: var(--Light-Gray);
+  font-size: 1.5rem;
+  font-weight: 400;
+  margin: 1rem;
+}
+
+.duble-card_first button {
+  outline: none;
+  width: 100%;
+  margin-top: 3rem;
+  border: none;
+  background-color: var(--Bright-Yellow);
+  color: white;
+  padding: 1.5rem 0;
+  border-radius: 5px;
+  font-size: 1.5rem;
+  font-weight: 300;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.duble-card_second {
+  flex: 1 1 20rem;
+  padding: 5rem;
+}
+
+.duble-card_second h2 {
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.duble-card_second p {
+  font-size: 1.2rem;
+  line-height: 2;
+  margin: 3rem 0;
+}
+
+@media (max-width: 600px) {
+  html {
+    font-size: 50%;
+  }
+  .duble-card {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 600px) {
+  html {
+    font-size: 40%;
+  }
+}
